@@ -31,7 +31,8 @@ public class OntologyManager {
 		rdfModel = ModelFactory.createDefaultModel();
 		setNamespaces();
 		loadOntologyiesToModel();
-		printToFile(rdfModel, "help.txt");
+		//debugging ontology
+//		printToFile(rdfModel, "01_loaded_and_combined_model.ttl");
 	}
 
 	private void loadOntologyiesToModel() {
