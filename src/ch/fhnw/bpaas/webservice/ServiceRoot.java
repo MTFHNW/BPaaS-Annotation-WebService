@@ -21,6 +21,11 @@ public class ServiceRoot {
 	@GET
 	@Produces(MediaType.TEXT_PLAIN)
 	public String oneParam(@PathParam("a") String a) {
-		return ontology.queryConcept(a);
+		//prevent error message due to favicon.ico request by browsers
+		if(a.equals("favicon.ico")){
+			return "";
+		}else{
+			return ontology.queryConcept(a);
+		}
 	}
 }

@@ -56,18 +56,12 @@ public class OntologyManager {
 
 	public ResultSet query(ParameterizedSparqlString queryStr) {
 		addNamespacesToQuery(queryStr);
-
+		//printout for console
 		System.out.println(queryStr.toString());
-
 		Query query = QueryFactory.create(queryStr.toString());
 		QueryExecution qexec = QueryExecutionFactory.create(query, rdfModel);
 
 		return qexec.execSelect();
-	}
-
-	private String parsUri(String string) {
-//		return string.split("#")[1];
-		return string;
 	}
 
 	private void addNamespacesToQuery(ParameterizedSparqlString queryStr) {
@@ -99,9 +93,7 @@ public class OntologyManager {
 	}
 		
 	private String formatURI(String string) {
-		
 		String[] array = string.split("/");
-		
 		return array[array.length-1].replace("#",":");
 	}
 
@@ -129,5 +121,4 @@ public class OntologyManager {
 			resultSet.put(soln.get("subject").toString(), soln.get("label").toString());
 		}
 	}
-
 }

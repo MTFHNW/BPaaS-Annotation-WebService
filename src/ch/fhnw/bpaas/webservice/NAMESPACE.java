@@ -5,10 +5,10 @@ public enum NAMESPACE {
 	OWL		("owl",							"http://www.w3.org/2002/07/owl#"),
 	RDFS	("rdfs",						"http://www.w3.org/2000/01/rdf-schema#"),
 	RDF		("rdf",							"http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
-	BPAAS	("bpaas",						"http://ikm-group.ch/archimeo/bpaas#"),
-	APQC	("apqc",						"http://ikm-group.ch/archimeo/apqc#"),
-	FBPDO	("fbpdo",						"http://ikm-group.ch/archimeo/fbpdo#"),
-	TOP		("top",							"http://ikm-group.ch/archimeo/top#"),
+	BPAAS	(ONTOLOGY.BPAAS.getPrefix(),	"http://ikm-group.ch/archimeo/bpaas#"),
+	APQC	(ONTOLOGY.APQC.getPrefix(),		"http://ikm-group.ch/archimeo/apqc#"),
+	FBPDO	(ONTOLOGY.FBPDO.getPrefix(),	"http://ikm-group.ch/archimeo/fbpdo#"),
+	TOP		(ONTOLOGY.TOP.getPrefix(),		"http://ikm-group.ch/archimeo/top#"),
 	EO		(ONTOLOGY.EO.getPrefix(), 		"http://ikm-group.ch/archiMEO/eo#");
 
 	private String prefix;
