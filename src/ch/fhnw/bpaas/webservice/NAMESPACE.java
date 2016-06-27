@@ -8,7 +8,7 @@ public enum NAMESPACE {
 	BPAAS	(ONTOLOGY.BPAAS.getPrefix(),	"http://ikm-group.ch/archimeo/bpaas#"),
 	APQC	(ONTOLOGY.APQC.getPrefix(),		"http://ikm-group.ch/archimeo/apqc#"),
 	FBPDO	(ONTOLOGY.FBPDO.getPrefix(),	"http://ikm-group.ch/archimeo/fbpdo#"),
-	TOP		(ONTOLOGY.TOP.getPrefix(),		"http://ikm-group.ch/archimeo/top#"),
+	TOP		(ONTOLOGY.TOP.getPrefix(),		"http://ikm-group.ch/archiMEO/top#"),
 	EO		(ONTOLOGY.EO.getPrefix(), 		"http://ikm-group.ch/archiMEO/eo#");
 
 	private String prefix;

@@ -4,9 +4,9 @@ public enum ONTOLOGY {
 	BPAAS	("bpaas",	"TTL",	"https://raw.githubusercontent.com/BPaaSModelling/BPaaS-Ontology/master/bpaas.ttl"),
 	APQC	("apqc",	"TTL",	"https://raw.githubusercontent.com/BPaaSModelling/APQC-Ontology/master/apqc.ttl"),
 	FBPDO	("fbpdo",	"TTL",	"https://raw.githubusercontent.com/BPaaSModelling/Functional-Business-Process-Description-Ontology/master/fbpdo.ttl"),
-	TOP		("top",		"TTL",	"https://raw.githubusercontent.com/ikm-group/ArchiMEO/master/ARCHIMEO/TOP/TOP.ttl"),
-	EO		("eo",		"TTL", 	"https://raw.githubusercontent.com/ikm-group/ArchiMEO/master/ARCHIMEO/EO/EO.ttl"),
-	ARCHIMEO("archimeo","TTL", 	"https://raw.githubusercontent.com/ikm-group/ArchiMEO/master/ARCHIMEO/ArchiMEO.ttl");
+	TOP		("top",		"TTL",	"resources/ArchiMEO/TOP/TOP.ttl"),
+	EO		("eo",		"TTL", 	"resources/ArchiMEO/EO/EO.ttl"),
+	ARCHIMEO("archimeo","TTL", 	"resources/ArchiMEO/ArchiMEO.ttl");
 	
 	private String prefix;
 	private String format;

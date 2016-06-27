@@ -29,6 +29,7 @@ public class OntologyManager {
 
 	public OntologyManager() {
 		rdfModel = ModelFactory.createDefaultModel();
+		
 		setNamespaces();
 		loadOntologyiesToModel();
 		//debugging ontology
@@ -37,7 +38,7 @@ public class OntologyManager {
 
 	private void loadOntologyiesToModel() {
 		for(ONTOLOGY ontology : ONTOLOGY.values()){
-			rdfModel.read(ontology.getRemoteURL(),	ontology.getFormat());
+			RDFDataMgr.read(rdfModel, ontology.getRemoteURL()) ;
 		}
 	}
 
