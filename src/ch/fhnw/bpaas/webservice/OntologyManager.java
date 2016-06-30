@@ -38,7 +38,10 @@ public class OntologyManager {
 
 	private void loadOntologyiesToModel() {
 		for(ONTOLOGY ontology : ONTOLOGY.values()){
-			RDFDataMgr.read(rdfModel, ontology.getRemoteURL()) ;
+//			RDFDataMgr.read(rdfModel, this.getClass().getClassLoader().getResourceAsStream(ontology.getRemoteURL()), Lang.TTL);
+//			RDFDataMgr.read(rdfModel, ontology.getRemoteURL()) ;
+			rdfModel.read(ontology.getRemoteURL(), ontology.getFormat());
+			
 		}
 	}
 
